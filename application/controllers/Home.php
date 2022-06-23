@@ -5,7 +5,7 @@ class Home extends CI_Controller {
 
 	public function index()
 	{
-		echo "test";
-		// $this->load->view('welcome_message');
+		
+		$this->template->display('public/v_home');
 	}
 }
