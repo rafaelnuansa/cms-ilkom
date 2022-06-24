@@ -5,7 +5,7 @@ class Login extends CI_Controller{
         $this->load->model('m_login');
     }
     function index(){
-        $this->load->view('auth/v_login');
+        $this->load->view('v_login');
     }
 	
     function auth(){
@@ -14,8 +14,8 @@ class Login extends CI_Controller{
         $auth=$this->m_login->authentication($username,$password);
         echo json_encode($auth);
         if($auth->num_rows() > 0){
-         $this->session->set_userdata('masuk',true);
-         $this->session->set_userdata('user',$username);
+         $this->session->set_userdata('logged_in',true);
+         $this->session->set_userdata('username',$username);
          $users=$auth->row_array();
          if($users['roles']=='1'){
             $this->session->set_userdata('akses','1');
