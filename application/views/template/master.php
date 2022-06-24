@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title><?php echo $title;?> | FISIPKOM</title>
 	<?php $this->load->view('template/stylecss.php');?>
+	<?php $this->load->view('template/scriptjs.php');?>
 </head>
 <body class="hold-transition sidebar-mini layout-fixed">
 <div class="wrapper">
@@ -22,6 +23,5 @@
 
 </div>
 <!-- ./wrapper -->
-<?php echo $this->load->view('template/scriptjs.php');?>
 </body>
 </html>

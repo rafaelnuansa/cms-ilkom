@@ -83,19 +83,19 @@
           <!-- ./col -->
         </div>
         <!-- /.row -->
-		<div class="row">
-			<div class="col-lg-12">
-				
-			<div class="card card-outline card-info">
-				<div class="card-header">
-					Tugas Bahasa Pemrograman OOP
+				<div class="row">
+					<div class="col-lg-12">
+						
+					<div class="card card-outline card-info">
+						<div class="card-header">
+							Tugas Bahasa Pemrograman OOP
+						</div>
+						<div class="card-body">
+							
+						</div>
+					</div>
+					</div>
 				</div>
-				<div class="card-body">
-					
-				</div>
-			</div>
-			</div>
-		</div>
       </div><!-- /.container-fluid -->
     </section>
     <!-- /.content -->

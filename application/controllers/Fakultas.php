@@ -1,5 +1,5 @@
 <?php
-class Users extends CI_Controller{
+class Fakultas extends CI_Controller{
 	function __construct(){
 		parent::__construct();
 		if($this->session->userdata('logged_in') !=TRUE){
@@ -52,23 +52,6 @@ class Users extends CI_Controller{
 			   redirect('users');
 		   }
 	}
-
-	
-	function reset_password(){
-        $id=$this->uri->segment(3);
-        $get=$this->m_users->getUsername($id);
-        if($get->num_rows()>0){
-            $a=$get->row_array();
-            $b=$a['username'];
-        }
-        $pass=rand(123456,999999);
-        $this->m_users->resetPass($id,$pass);
-        echo $this->session->set_flashdata('msg','show-modal');
-        echo $this->session->set_flashdata('uname',$b);
-        echo $this->session->set_flashdata('upass',$pass);
-	    redirect('users');
-   
-    }
 
 	function delete(){
 		$id=$this->input->post('id');
