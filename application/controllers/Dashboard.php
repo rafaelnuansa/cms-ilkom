@@ -8,12 +8,8 @@ class Dashboard extends CI_Controller{
         };
 	}
 	function index(){
-		if($this->session->userdata('akses')=='1'){
 			$data['title'] = "Dashboard";
 			$this->template->display('v_dashboard', $data);
-		}else{
-			redirect('login');
-		}
 	
 	}
 	

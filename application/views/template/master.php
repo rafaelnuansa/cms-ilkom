@@ -21,6 +21,14 @@
 
 	<?php $this->load->view('template/footer.php');?>
 
+
+
+	<?php if($this->session->flashdata('msg')=='show-modal'):?>
+        <script type="text/javascript">
+                $('#ModalResetPassword').modal('show');
+        </script>
+<?php endif?>
+
 </div>
 <!-- ./wrapper -->
 </body>

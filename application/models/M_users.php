@@ -12,7 +12,7 @@ class M_users extends CI_Model{
 	}
 
 	function update($id,$username,$nama_lengkap,$password){
-		$query=$this->db->query("UPDATE users set username='$username',nama_lengkap='$nama_lengkap',password='$password' where id='$id'");
+		$query=$this->db->query("UPDATE users set username='$username',nama_lengkap='$nama_lengkap',password=md5('$password') where id='$id'");
 		return $query;
 	}
 	

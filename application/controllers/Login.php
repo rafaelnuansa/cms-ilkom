@@ -22,7 +22,6 @@ class Login extends CI_Controller{
             $this->session->set_userdata('id',$id);
             $this->session->set_userdata('username',$username);
             redirect('dashboard');
-
        }else{
          echo $this->session->set_flashdata('msg','<div class="alert alert-danger" role="alert"><button type="button" class="close" data-dismiss="alert"><span class="fa fa-close"></span></button> Username Atau Password Salah</div>');
          redirect('login');

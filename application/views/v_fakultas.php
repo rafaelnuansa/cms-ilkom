@@ -3,12 +3,12 @@
    	<div class="container-fluid">
    		<div class="row mb-2">
    			<div class="col-sm-6">
-   				<h1 class="m-0">Users</h1>
+   				<h1 class="m-0">Fakultas</h1>
    			</div><!-- /.col -->
    			<div class="col-sm-6">
    				<ol class="breadcrumb float-sm-right">
    					<li class="breadcrumb-item"><a href="#">Home</a></li>
-   					<li class="breadcrumb-item active">Users</li>
+   					<li class="breadcrumb-item active">Fakultas</li>
    				</ol>
    			</div><!-- /.col -->
    		</div><!-- /.row -->
@@ -24,36 +24,35 @@
 
    				<div class="card card-outline card-info">
    					<div class="card-header">
-						 <a class="btn btn-primary" data-toggle="modal" data-target="#myModal"><span class="fas fa-plus"></span> Add Users</a>
+						 <a class="btn btn-primary" data-toggle="modal" data-target="#myModal"><span class="fas fa-plus"></span> Add Fakultas</a>
    					</div>
    					<div class="card-body table-responsive">
    						<table id="datatable" class="table">
    							<thead>
    								<tr>
    									<th>#</th>
-   									<th>Username</th>
-   									<th>Nama Lengkap</th>
+   									<th>Kode Fakultas</th>
+   									<th>Nama Fakultas</th>
    									<th style="text-align:center;">Aksi</th>
    								</tr>
    							</thead>
    							<tbody>
-   								<?php 
+   								<?php
 								
 								$no = 1;
-								foreach ($data->result_array() as $i):
+								foreach ($data->result_array() as $i) :
 											$id = $i['id'];
-											$username = $i['username'];
-											$nama_lengkap = $i['nama_lengkap'];
+											$kode_fakultas = $i['kode_fakultas'];
+											$nama_fakultas = $i['nama_fakultas'];
 										?>
    									<tr>
    										<td><?php echo $no++; ?></td>
-   										<td><?php echo $username; ?></td>
-   										<td><?php echo $nama_lengkap; ?></td>
+   										<td><?php echo $kode_fakultas; ?></td>
+   										<td><?php echo $nama_fakultas; ?></td>
 
    										<td style="text-align:right;">
    											<a class="btn btn-success" data-toggle="modal" data-target="#ModalEdit<?php echo $id; ?>"><i class="fas fa-edit"></i></a>
-   											<a class="btn btn-warning" href="<?php echo base_url() . 'users/reset_password/' . $id; ?>"><i class="fas fa-key"></i></a>
-   											<a class="btn btn-danger hapus-user" data-id="<?php echo $id;?>"><i class="fas fa-trash"></i></a>
+   											<a class="btn btn-danger hapus-fakultas" data-id="<?php echo $id;?>"><i class="fas fa-trash"></i></a>
    										</td>
    									</tr>
 
@@ -73,37 +72,24 @@
    	<div class="modal-dialog" role="document">
    		<div class="modal-content">
    			<div class="modal-header">
-   				<h4 class="modal-title" id="myModalLabel">Add Users</h4>
+   				<h4 class="modal-title" id="myModalLabel">Add Fakultas</h4>
    				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="fas fa-times"></i></span></button>
    			</div>
-   			<form class="form-horizontal" action="<?php echo base_url() . 'users/create' ?>" method="post" enctype="multipart/form-data">
+   			<form class="form-horizontal" action="<?php echo base_url() . 'fakultas/create' ?>" method="post" enctype="multipart/form-data">
    				<div class="modal-body">
 
    					<div class="form-group">
-   						<label class="col-sm-12 control-label">Nama Lengkap</label>
+   						<label class="col-sm-12 control-label">Kode Fakultas</label>
    						<div class="col-sm-12">
-   							<input type="text" name="nama_lengkap" class="form-control" placeholder="Nama Lengkap" required>
+   							<input type="text" name="kode_fakultas" class="form-control" placeholder="Kode Fakultas" required>
    						</div>
    					</div>
    					<div class="form-group">
-   						<label class="col-sm-12 control-label">Username</label>
+   						<label class="col-sm-12 control-label">Nama Fakultas</label>
    						<div class="col-sm-12">
-   							<input type="text" name="username" class="form-control" placeholder="Username" required>
+   							<input type="text" name="nama_fakultas" class="form-control" placeholder="Nama Fakultas" required>
    						</div>
    					</div>
-   					<div class="form-group">
-   						<label for="inputPassword" class="col-sm-12 control-label">Password</label>
-   						<div class="col-sm-12">
-   							<input type="password" name="xpassword" class="form-control" placeholder="Password" required>
-   						</div>
-   					</div>
-   					<div class="form-group">
-   						<label for="inputPassword2" class="col-sm-12 control-label">Ulangi Password</label>
-   						<div class="col-sm-12">
-   							<input type="password" name="xpassword2" class="form-control" placeholder="Ulangi Password" required>
-   						</div>
-   					</div>
-
    				</div>
    				<div class="modal-footer">
    					<button type="button" class="btn btn-default btn-flat" data-dismiss="modal">Close</button>
@@ -116,8 +102,8 @@
    <?php foreach ($data->result_array() as $i) :
 	
 	$id = $i['id'];
-	$username = $i['username'];
-	$nama_lengkap = $i['nama_lengkap'];
+	$kode_fakultas = $i['kode_fakultas'];
+	$nama_fakultas = $i['nama_fakultas'];
 		?>
 
    	<!--Modal Edit Pengguna-->
@@ -129,35 +115,21 @@
 							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="fas fa-times"></i></span></button>
    				
    				</div>
-   				<form class="form-horizontal" action="<?php echo base_url() . 'users/update' ?>" method="post" enctype="multipart/form-data">
+   				<form class="form-horizontal" action="<?php echo base_url() . 'fakultas/update' ?>" method="post" enctype="multipart/form-data">
    					<div class="modal-body">
    						<div class="form-group">
-   							<label class="col-sm-4 control-label">Nama</label>
+   							<label class="col-sm-4 control-label">Kode Fakultas</label>
    							<div class="col-sm-12">
    								<input type="hidden" name="id" value="<?php echo $id; ?>" />
-   								<input type="text" name="nama_lengkap" class="form-control" value="<?php echo $nama_lengkap; ?>" placeholder="Nama Lengkap" required>
+   								<input type="text" name="kode_fakultas" class="form-control" value="<?php echo $kode_fakultas; ?>" placeholder="Nama Lengkap" required>
    							</div>
    						</div>
    						<div class="form-group">
    							<label class="col-sm-4 control-label">Username</label>
    							<div class="col-sm-12">
-   								<input type="text" name="username" class="form-control" value="<?php echo $username; ?>" placeholder="Email" required>
+   								<input type="text" name="nama_fakultas" class="form-control" value="<?php echo $nama_fakultas; ?>" placeholder="Email" required>
    							</div>
    						</div>
-   						<div class="form-group">
-   							<label class="col-sm-4 control-label">Password</label>
-   							<div class="col-sm-12">
-   								<input type="password" name="xpassword" class="form-control" placeholder="Password">
-   							</div>
-   						</div>
-   						<div class="form-group">
-   							<label class="col-sm-4 control-label">Ulangi Password</label>
-   							<div class="col-sm-12">
-   								<input type="password" name="xpassword2" class="form-control" placeholder="Ulangi Password">
-   							</div>
-   						</div>
-
-
    					</div>
    					<div class="modal-footer">
    						<button type="button" class="btn btn-default btn-flat" data-dismiss="modal">Close</button>
@@ -169,44 +141,10 @@
    	</div>
    <?php endforeach; ?>
 
-	<!--Modal Reset Password-->
-	<div class="modal fade" id="ModalResetPassword" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h4 class="modal-title" id="myModalLabel">Reset Password</h4> 
-												 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="fa fa-times"></i></span></button>
-                      
-                    </div>
-
-                    <div class="modal-body">
-
-                            <table>
-                                <tr>
-                                    <th style="width:120px;">Username</th>
-                                    <th>:</th>
-                                    <th><?php echo $this->session->flashdata('uname');?></th>
-                                </tr>
-                                <tr>
-                                    <th style="width:120px;">Password Baru</th>
-                                    <th>:</th>
-                                    <th><?php echo $this->session->flashdata('upass');?></th>
-                                </tr>
-                            </table>
-
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-
-<script>
+	<script>
 	// fungsi untuk hapus data
           //pilih selector dari table id datatable dengan class .hapus-mahasiswa
-          $('#datatable').on('click','.hapus-user', function () {
+          $('#datatable').on('click','.hapus-fakultas', function () {
             var id =  $(this).data('id');
             Swal.fire({
                 title: 'Konfirmasi',
@@ -221,7 +159,7 @@
               }).then((result) => {
                 if (result.value) {
                   $.ajax({
-                    url:"<?=base_url('users/delete')?>",  
+                    url:"<?=base_url('fakultas/delete')?>",  
                     method:"post",
                     beforeSend :function () {
                     Swal.fire({
@@ -238,8 +176,7 @@
                         'Hapus',
                         'Berhasil Terhapus',
                         'success'
-                      )
-					  .then(function(){ 
+                      ).then(function(){ 
 						location.reload();
 						});
                     }

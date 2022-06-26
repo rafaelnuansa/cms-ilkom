@@ -6,56 +6,36 @@ class Fakultas extends CI_Controller{
             $url=base_url('login');
             redirect($url);
         };
-		$this->load->model('m_users');
+		$this->load->model('m_fakultas');
 	}
 
 	function index(){
-		$data['title'] = "Users";
-		$id=$this->session->userdata('id');
-		$data['user']=$this->m_users->get_user_login($id);
-		$data['data']=$this->m_users->get_all_users();
-		$this->template->display('v_users', $data);
+		$data['title'] = "Fakultas";
+		$data['data']=$this->m_fakultas->get_all_fakultas();
+		$this->template->display('v_fakultas', $data);
 	}
-
+ 
 	function create(){
-		$username=$this->input->post('username');
-		$nama_lengkap=$this->input->post('nama_lengkap');
-		$password=$this->input->post('xpassword');
-		$confirm_password=$this->input->post('xpassword2');
-		if ($password <> $confirm_password) {
-			  $this->session->set_flashdata('msgerror', 'Konfirmasi Password Tidak Sesuai');
-			  redirect('users');
-		}else{
-			  $this->m_users->saveUser($username,$nama_lengkap,$password);
-			  $this->session->set_flashdata('msgsuccess', 'Data Berhasil disimpan');
-			  redirect('users');
-			  
-		  }
+		$kode_fakultas=$this->input->post('kode_fakultas');
+		$nama_fakultas=$this->input->post('nama_fakultas');	
+		$this->m_fakultas->saveFakultas($kode_fakultas,$nama_fakultas);
+		$this->session->set_flashdata('msgsuccess', 'Data Berhasil disimpan');
+		redirect('fakultas');
 	}
 
 	function update(){
 		$id=$this->input->post('id');
-		$nama_lengkap=$this->input->post('nama_lengkap');
-		$username=$this->input->post('username');
-		$password=$this->input->post('xpassword');
-		$confirm_password=$this->input->post('xpassword2');
-		if (empty($password) && empty($confirm_password)) {
-			$this->m_users->updateNoPass($id,$username,$nama_lengkap);
-			echo $this->session->set_flashdata('msgsuccess','Data Berhasil diupdate!');
-			   redirect('users');
-		 }elseif ($password <> $confirm_password) {
-			 echo $this->session->set_flashdata('msgerror','Gagal Mengupdate Data!');
-			   redirect('users');
-		 }else{
-			   $this->m_users->update($id,$username,$nama_lengkap,$password);
-			echo $this->session->set_flashdata('msgsuccess','Data Berhasil diupdate!');
-			   redirect('users');
-		   }
+		$kode_fakultas=$this->input->post('kode_fakultas');
+		$nama_fakultas=$this->input->post('nama_fakultas');
+		$this->m_fakultas->update($id,$kode_fakultas,$nama_fakultas);
+		echo $this->session->set_flashdata('msgsuccess','Data Berhasil diupdate!');
+		redirect('fakultas');
+	
 	}
 
 	function delete(){
 		$id=$this->input->post('id');
-		$data = $this->m_users->deleteUser($id);
+		$data = $this->m_fakultas->deleteFakultas($id);
 		echo json_encode($data);
 	}
 
