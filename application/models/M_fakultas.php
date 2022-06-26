@@ -27,5 +27,15 @@ class M_fakultas extends CI_Model{
 		return $query;
 	}
 
+	function get_fakultas(){
+        $hasil=$this->db->query("SELECT * FROM fakultas ORDER BY nama_fakultas ASC");
+        return $hasil;
+    }
+ 
+    function get_prodi($id){
+        $hasil=$this->db->query("SELECT * FROM prodi WHERE id='$id'");
+        return $hasil->result();
+    }
+
 
 }

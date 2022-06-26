@@ -111,7 +111,7 @@
    		<div class="modal-dialog" role="document">
    			<div class="modal-content">
    				<div class="modal-header">
-   					<h4 class="modal-title" id="myModalLabel">Edit Users</h4>
+   					<h4 class="modal-title" id="myModalLabel">Edit Fakultas</h4>
 							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="fas fa-times"></i></span></button>
    				
    				</div>
@@ -121,13 +121,13 @@
    							<label class="col-sm-4 control-label">Kode Fakultas</label>
    							<div class="col-sm-12">
    								<input type="hidden" name="id" value="<?php echo $id; ?>" />
-   								<input type="text" name="kode_fakultas" class="form-control" value="<?php echo $kode_fakultas; ?>" placeholder="Nama Lengkap" required>
+   								<input type="text" name="kode_fakultas" class="form-control" value="<?php echo $kode_fakultas; ?>" placeholder="Kode Fakultas" required>
    							</div>
    						</div>
    						<div class="form-group">
-   							<label class="col-sm-4 control-label">Username</label>
+   							<label class="col-sm-4 control-label">Nama Fakultas</label>
    							<div class="col-sm-12">
-   								<input type="text" name="nama_fakultas" class="form-control" value="<?php echo $nama_fakultas; ?>" placeholder="Email" required>
+   								<input type="text" name="nama_fakultas" class="form-control" value="<?php echo $nama_fakultas; ?>" placeholder="Nama Fakultas" required>
    							</div>
    						</div>
    					</div>

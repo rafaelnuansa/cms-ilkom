@@ -141,7 +141,7 @@
    						<div class="form-group">
    							<label class="col-sm-4 control-label">Username</label>
    							<div class="col-sm-12">
-   								<input type="text" name="username" class="form-control" value="<?php echo $username; ?>" placeholder="Email" required>
+   								<input type="text" name="username" class="form-control" value="<?php echo $username; ?>" placeholder="Username" required>
    							</div>
    						</div>
    						<div class="form-group">
