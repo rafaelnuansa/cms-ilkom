@@ -1,5 +1,5 @@
 <?php
-class Fakultas extends CI_Controller{
+class Prodi extends CI_Controller{
 	function __construct(){
 		parent::__construct();
 		if($this->session->userdata('logged_in') !=TRUE){
@@ -7,11 +7,13 @@ class Fakultas extends CI_Controller{
             redirect($url);
         };
 		$this->load->model('m_prodi');
+		$this->load->model('m_fakultas');
 	}
 
 	function index(){
 		$data['title'] = "Prodi";
-		$data['data']=$this->m_prodi->get_all_fakultas();
+		$data['data']=$this->m_prodi->get_all_prodi();
+		$data['fakultas']=$this->m_fakultas->get_all_fakultas();
 		$this->template->display('v_prodi', $data);
 	}
  
