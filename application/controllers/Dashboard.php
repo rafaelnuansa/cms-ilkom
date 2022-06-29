@@ -1,3 +1,4 @@
+
 <?php
 class Dashboard extends CI_Controller{
 	function __construct(){
@@ -12,6 +13,5 @@ class Dashboard extends CI_Controller{
 			$this->template->display('v_dashboard', $data);
 	
 	}
-	
 	
 }
