@@ -8,7 +8,7 @@ class Fakultas extends CI_Controller{
         };
 		$this->load->model('m_fakultas');
 	}
-
+	
 	function index(){
 		$data['title'] = "Fakultas";
 		$data['data']=$this->m_fakultas->get_all_fakultas();
