@@ -70,3 +70,6 @@
 <script src="<?php echo base_url();?>themes/lte/dist/js/adminlte.min.js"></script>
 </body>
 </html>
+/*
+* Last updated by fikri
+ */
