@@ -19,7 +19,7 @@ class Fakultas extends CI_Controller{
 		$kode_fakultas=$this->input->post('kode_fakultas');
 		$nama_fakultas=$this->input->post('nama_fakultas');	
 		$this->m_fakultas->saveFakultas($kode_fakultas,$nama_fakultas);
-		$this->session->set_flashdata('msgsuccess', 'Data Berhasil disimpan');
+		$this->session->set_flashdata('msgsuccess', 'Data Berhasil Disimpan');
 		redirect('fakultas');
 	}
 
@@ -28,7 +28,7 @@ class Fakultas extends CI_Controller{
 		$kode_fakultas=$this->input->post('kode_fakultas');
 		$nama_fakultas=$this->input->post('nama_fakultas');
 		$this->m_fakultas->update($id,$kode_fakultas,$nama_fakultas);
-		echo $this->session->set_flashdata('msgsuccess','Data Berhasil diupdate!');
+		echo $this->session->set_flashdata('msgsuccess','Data Berhasil Diupdate!');
 		redirect('fakultas');
 	
 	}
