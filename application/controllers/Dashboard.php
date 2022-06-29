@@ -13,5 +13,5 @@ class Dashboard extends CI_Controller{
 			$this->template->display('v_dashboard', $data);
 	
 	}
-	
+	 
 }
