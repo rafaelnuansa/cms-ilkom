@@ -37,5 +37,4 @@ class M_fakultas extends CI_Model{
         return $hasil->result();
     }
 
-
 }
