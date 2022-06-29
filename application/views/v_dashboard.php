@@ -88,7 +88,7 @@
 						
 					<div class="card card-outline card-info">
 						<div class="card-header">
-							Tugas Bahasa Pemrograman OOP
+							TUGAS KELOMPOK PROJEK AKHIR OOP
 						</div>
 						<div class="card-body">
 							
