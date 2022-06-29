@@ -22,7 +22,7 @@ class Prodi extends CI_Controller{
 		$nama_prodi=$this->input->post('nama_prodi');	
 		$kode_fakultas=$this->input->post('kode_fakultas');
 		$this->m_prodi->saveProdi($kode_prodi,$nama_prodi,$kode_fakultas);
-		$this->session->set_flashdata('msgsuccess', 'Data Berhasil disimpan');
+		$this->session->set_flashdata('msgsuccess', 'Data Berhasil Disimpan');
 		redirect('prodi');
 	}
 
@@ -32,7 +32,7 @@ class Prodi extends CI_Controller{
 		$nama_prodi=$this->input->post('nama_prodi');
 		$kode_fakultas=$this->input->post('kode_fakultas');
 		$this->m_prodi->update($id,$kode_prodi,$nama_prodi, $kode_fakultas);
-		echo $this->session->set_flashdata('msgsuccess','Data Berhasil diupdate!');
+		echo $this->session->set_flashdata('msgsuccess','Data Berhasil Diupdate!');
 		redirect('prodi');
 	
 	}
