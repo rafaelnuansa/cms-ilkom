@@ -46,7 +46,7 @@
 											$nama_lengkap = $i['nama_lengkap'];
 										?>
    									<tr>
-   										<td><?php echo $no++; ?></td>
+										<td><?php echo $no++; ?></td>
    										<td><?php echo $username; ?></td>
    										<td><?php echo $nama_lengkap; ?></td>
 
@@ -54,7 +54,7 @@
    											<a class="btn btn-success" data-toggle="modal" data-target="#ModalEdit<?php echo $id; ?>"><i class="fas fa-edit"></i></a>
    											<a class="btn btn-warning" href="<?php echo base_url() . 'users/reset_password/' . $id; ?>"><i class="fas fa-key"></i></a>
    											<a class="btn btn-danger hapus-user" data-id="<?php echo $id;?>"><i class="fas fa-trash"></i></a>
-   										</td>
+										</td>
    									</tr>
 
    								<?php endforeach; ?>
