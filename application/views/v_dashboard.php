@@ -99,6 +99,3 @@
       </div><!-- /.container-fluid -->
     </section>
     <!-- /.content -->
-/*
-* Last updated by fikri
- */
