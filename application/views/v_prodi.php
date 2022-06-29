@@ -199,7 +199,7 @@
               } else if (result.dismiss === swal.DismissReason.cancel) {
                   Swal.fire(
                     'Batal',
-                    'Anda membatalkan penghapusan',
+                    'Anda Membatalkan Penghapusan',
                     'error'
                   )
                 }
