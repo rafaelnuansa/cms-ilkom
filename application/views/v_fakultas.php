@@ -127,7 +127,7 @@
    						<div class="form-group">
    							<label class="col-sm-4 control-label">Nama Fakultas</label>
    							<div class="col-sm-12">
-   								<input type="text" name="nama_fakultas" class="form-control" value="<?php echo $nama_fakultas; ?>" placeholder="Nama Fakultas" required>
+   							<input type="text" name="nama_fakultas" class="form-control" value="<?php echo $nama_fakultas; ?>" placeholder="Nama Fakultas" required>
    							</div>
    						</div>
    					</div>
