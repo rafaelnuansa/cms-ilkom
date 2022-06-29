@@ -27,7 +27,7 @@ class Users extends CI_Controller{
 			  redirect('users');
 		}else{
 			  $this->m_users->saveUser($username,$nama_lengkap,$password);
-			  $this->session->set_flashdata('msgsuccess', 'Data Berhasil disimpan');
+			  $this->session->set_flashdata('msgsuccess', 'Data Berhasil Disimpan');
 			  redirect('users');
 			  
 		  }
@@ -41,14 +41,14 @@ class Users extends CI_Controller{
 		$confirm_password=$this->input->post('xpassword2');
 		if (empty($password) && empty($confirm_password)) {
 			$this->m_users->updateNoPass($id,$username,$nama_lengkap);
-			echo $this->session->set_flashdata('msgsuccess','Data Berhasil diupdate!');
+			echo $this->session->set_flashdata('msgsuccess','Data Berhasil Diupdate!');
 			   redirect('users');
 		 }elseif ($password <> $confirm_password) {
 			 echo $this->session->set_flashdata('msgerror','Gagal Mengupdate Data!');
 			   redirect('users');
 		 }else{
 			   $this->m_users->update($id,$username,$nama_lengkap,$password);
-			echo $this->session->set_flashdata('msgsuccess','Data Berhasil diupdate!');
+			echo $this->session->set_flashdata('msgsuccess','Data Berhasil Diupdate!');
 			   redirect('users');
 		   }
 	}
