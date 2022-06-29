@@ -75,7 +75,7 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => 'localhost',
+	'hostname' => 'localhot',
 	'username' => 'root',
 	'password' => '',
 	'database' => 'cms_ilkom',
