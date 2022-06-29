@@ -24,7 +24,7 @@
 
    				<div class="card card-outline card-info">
    					<div class="card-header">
-						 <a class="btn btn-primary" data-toggle="modal" data-target="#myModal"><span class="fas fa-plus"></span> Add Fakultas</a>
+						 <a class="btn btn-primary" data-toggle="modal" data-target="#myModal"><span class="fas fa-plus"></span> Tambah Fakultas</a>
    					</div>
    					<div class="card-body table-responsive">
    						<table id="datatable" class="table">
@@ -72,7 +72,7 @@
    	<div class="modal-dialog" role="document">
    		<div class="modal-content">
    			<div class="modal-header">
-   				<h4 class="modal-title" id="myModalLabel">Add Fakultas</h4>
+   				<h4 class="modal-title" id="myModalLabel">Tambah Fakultas</h4>
    				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="fas fa-times"></i></span></button>
    			</div>
    			<form class="form-horizontal" action="<?php echo base_url() . 'fakultas/create' ?>" method="post" enctype="multipart/form-data">
