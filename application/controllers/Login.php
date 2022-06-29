@@ -9,7 +9,7 @@ class Login extends CI_Controller{
     }
 	
     function auth(){
-        $username=strip_tags(str_replace("'", "", $this->input->post('username')));
+	$username=strip_tags(str_replace("'", "", $this->input->post('username')));
         $password=strip_tags(str_replace("'", "", $this->input->post('password')));
         $auth=$this->m_login->authentication($username,$password);
         echo json_encode($auth);
