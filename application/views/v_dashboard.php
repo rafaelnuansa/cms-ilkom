@@ -103,8 +103,8 @@
 							<br> -
 							<br><br>
 							Menu Program Studi dikerjakan oleh :
-							<br> -
-							<br> -
+							<br> - Rusdi Abdul Gani
+							<br> - Jihan Fachrani
 							<br><br>
 							Menu Mahasiswa dikerjakan oleh :
 							<br> -
@@ -112,7 +112,7 @@
 							<br><br>
 							Menu Login dikerjakan oleh :
 							<br> - Rafael Nuansa Ramadhon
-							<br> -
+							<br> - Mip Saripudin
 							<br><br>
 							Menu User dikerjakan oleh :
 							<br> - Rafael Nuansa Ramadhon
