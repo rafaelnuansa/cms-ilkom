@@ -94,36 +94,36 @@
 							<b><h5>Tugas Kelompok 2 - Projek Akhir OOP</h5></b>
 						</div>
 						<div class="card-header">
-							Menu Login dikerjakan oleh :
+							<b>Menu Login dikerjakan oleh :</b>
 							<br> - Rafael Nuansa Ramadhon
 							<br> - Mip Saripudin
 							<br><br>
-							Menu Beranda dikerjakan oleh :
+							<b>Menu Beranda dikerjakan oleh :</b>
 							<br> - Rafael Nuansa Ramadhon
 							<br> - Muhamad Fikri
 							<br> - Risa
 							<br> - Risfan Novrian
 							<br><br>
-							Menu Fakultas dikerjakan oleh :
+							<b>Menu Fakultas dikerjakan oleh :</b>
 							<br> - Mochamad Fajar Hikmatulloh
 							<br> - Faturachman Ahmad
 							<br><br>
-							Menu Program Studi dikerjakan oleh :
+							<b>Menu Program Studi dikerjakan oleh :</b>
 							<br> - Rusdi Abdul Gani
 							<br> - Jihan Fachrani
 							<br><br>
-							Menu Mahasiswa dikerjakan oleh :
+							<b>Menu Mahasiswa dikerjakan oleh :</b>
 							<br> - Sri Meiylani Rejeki
 							<br> - Ari Permana Agung
 							<br><br>
-							Menu User dikerjakan oleh :
+							<b>Menu User dikerjakan oleh :</b>
 							<br> - Rafael Nuansa Ramadhon
 							<br> - Japar Sodik
 							<br><br>
-							Database dikerjakan oleh :
+							<b>Database dikerjakan oleh :</b>
 							<br> - Rafael Nuansa Ramadhon
 							<br> - Jihan Fachrani
-							Checking error dikerjakan oleh :
+							<b>Checking error dikerjakan oleh :</b>
 							<br> - Aldino Ogi
 							<br> - Tia Agustiani
 						</div>
