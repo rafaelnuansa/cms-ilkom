@@ -39,7 +39,7 @@
           </li>
 		  
 		  <li class="nav-item">
-            <a href="<?php echo base_url('programstudi');?>" class="nav-link">
+            <a href="<?php echo base_url('prodi');?>" class="nav-link">
               <i class="nav-icon fas fa-book"></i>
               <p>
                 Program Studi
