@@ -8,7 +8,7 @@
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
               <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item active">Dashboard v1</li>
+              <li class="breadcrumb-item active">Dashboard</li>
             </ol>
           </div><!-- /.col -->
         </div><!-- /.row -->
@@ -111,11 +111,11 @@
 							<br> -
 							<br><br>
 							Menu Login dikerjakan oleh :
-							<br> -
+							<br> - Rafael Nuansa Ramadhon
 							<br> -
 							<br><br>
 							Menu User dikerjakan oleh :
-							<br> -
+							<br> - Rafael Nuansa Ramadhon
 							<br> -
 						</div>
 						<div class="card-body">
