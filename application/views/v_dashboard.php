@@ -95,16 +95,28 @@
 						</div>
 						<div class="card-header">
 							Menu Beranda dikerjakan oleh :
+							<br> -
+							<br> -
 							<br><br>
 							Menu Fakultas dikerjakan oleh :
+							<br> -
+							<br> -
 							<br><br>
 							Menu Program Studi dikerjakan oleh :
+							<br> -
+							<br> -
 							<br><br>
 							Menu Mahasiswa dikerjakan oleh :
+							<br> -
+							<br> -
 							<br><br>
 							Menu Login dikerjakan oleh :
+							<br> -
+							<br> -
 							<br><br>
 							Menu User dikerjakan oleh :
+							<br> -
+							<br> -
 						</div>
 						<div class="card-body">
 							
