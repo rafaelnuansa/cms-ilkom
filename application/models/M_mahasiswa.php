@@ -1,7 +1,7 @@
 <?php
 class M_mahasiswa extends CI_Model{
 
-	function get_all_mhs(){
+	function get_all_mahasiswa(){
 		$query=$this->db->query("SELECT * FROM mahasiswa ORDER BY id_mahasiswa DESC");
 		return $query;	
 	}
