@@ -91,7 +91,7 @@
 							<b><h4>Selamat Datang Dihalaman Beranda</h4></b>
 						</div>
 						<div class="card-header">
-							<b><h4>Tugas Kelompok 2 - Projek Akhir OOP</h4></b>
+							<b><h5>Tugas Kelompok 2 - Projek Akhir OOP</h5></b>
 						</div>
 						<div class="card-header">
 							ANGGOTA :
