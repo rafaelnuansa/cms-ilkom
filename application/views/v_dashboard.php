@@ -88,7 +88,13 @@
 						
 					<div class="card card-outline card-info">
 						<div class="card-header">
-							TUGAS KELOMPOK PROJEK AKHIR OOP
+							<b><h4>Selamat Datang Dihalaman Beranda</h4></b>
+						</div>
+						<div class="card-header">
+							<b><h4>Tugas Kelompok 2 - Projek Akhir OOP</h4></b>
+						</div>
+						<div class="card-header">
+							ANGGOTA :
 						</div>
 						<div class="card-body">
 							
