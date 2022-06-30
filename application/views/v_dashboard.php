@@ -99,7 +99,7 @@
 							<br> -
 							<br><br>
 							Menu Fakultas dikerjakan oleh :
-							<br> -
+							<br> - Mochamad Fajar Hikmatulloh
 							<br> -
 							<br><br>
 							Menu Program Studi dikerjakan oleh :
