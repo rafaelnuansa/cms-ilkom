@@ -21,7 +21,7 @@ class Mahasiswa extends CI_Controller{
 	
 	function add(){
 		$data['title'] = 'Tambah Mahasiswa';
-		$data['fakultas'] = $this->m_mahasiswa->view();
+		$data['fakultas'] = $this->m_fakultas->view();
 		$this->template->display('v_mahasiswa_add', $data);
 	}
 
