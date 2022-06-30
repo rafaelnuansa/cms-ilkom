@@ -19,7 +19,7 @@ class Prodi extends CI_Controller{
  
 	function create(){
 		$kode_prodi=$this->input->post('kode_prodi');
-		$kode_prodi = $this->input->post('kode_prodi');	
+		$nama_prodi=$this->input->post('nama_prodi');	
 		$kode_fakultas=$this->input->post('kode_fakultas');
 		$this->m_prodi->saveProdi($kode_prodi,$nama_prodi,$kode_fakultas);
 		$this->session->set_flashdata('msgsuccess', 'Data Berhasil Disimpan');
