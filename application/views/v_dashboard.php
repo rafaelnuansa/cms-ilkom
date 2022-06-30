@@ -123,6 +123,7 @@
 							<b>Database dikerjakan oleh :</b>
 							<br> - Rafael Nuansa Ramadhon
 							<br> - Jihan Fachrani
+							<b></b>
 							<b>Checking error dikerjakan oleh :</b>
 							<br> - Aldino Ogi
 							<br> - Tia Agustiani
