@@ -3,7 +3,7 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1 class="m-0">Dashboard</h1>
+            <h1 class="m-0">Beranda</h1>
           </div><!-- /.col -->
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
@@ -94,7 +94,17 @@
 							<b><h5>Tugas Kelompok 2 - Projek Akhir OOP</h5></b>
 						</div>
 						<div class="card-header">
-							ANGGOTA :
+							Menu Beranda dikerjakan oleh :
+							<br><br>
+							Menu Fakultas dikerjakan oleh :
+							<br><br>
+							Menu Program Studi dikerjakan oleh :
+							<br><br>
+							Menu Mahasiswa dikerjakan oleh :
+							<br><br>
+							Menu Login dikerjakan oleh :
+							<br><br>
+							Menu User dikerjakan oleh :
 						</div>
 						<div class="card-body">
 							
