@@ -12,7 +12,7 @@ class Mahasiswa extends CI_Controller{
 	}
 
 	function index(){
-		$data['title'] = "Mahasiswa";
+		$data['title'] = 'Mahasiswa';
 		$data['data']=$this->m_mahasiswa->get_all_mhs();
 		$data['fakultas']=$this->m_fakultas->get_all_fakultas();
 		$this->template->display('v_mahasiswa', $data);
@@ -20,7 +20,7 @@ class Mahasiswa extends CI_Controller{
 
 	
 	function add(){
-		$data['title'] = "Tambah Mahasiswa";
+		$data['title'] = 'Tambah Mahasiswa';
 		$data['fakultas'] = $this->m_fakultas->view();
 		$this->template->display('v_mahasiswa_add', $data);
 	}
